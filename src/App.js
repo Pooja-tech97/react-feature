@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-// for test 2
+
 function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
   const [message, setMessage] = useState("");
 
   const handleLogin = (e) => {
@@ -20,12 +20,12 @@ function App() {
   return (
     <div className="container">
       <h2>Login</h2>
-         <p>---- test2 heading ----</p>
+      <p>---- test1 heading ----</p>
       <form onSubmit={handleLogin}>
         <div>
           <label>Username:</label>
           <br />
-           <p> test2 - username field</p>
+          <p> test1 - username field</p>
           <input
             type="text"
             value={username}
@@ -46,7 +46,7 @@ function App() {
         </div>
         <br />
         <button type="submit">Login</button>
-         <p>test2: Please enter valid credentials</p>
+        <p>test1: Please enter valid credentials</p>
       </form>
       {message && <p>{message}</p>}
     </div>
