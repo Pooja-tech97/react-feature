@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Counter from "./counter/Counter";
+
 import InputRef from "./InputRef";
 
 import reportWebVitals from "./reportWebVitals";
@@ -11,6 +13,7 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <InputRef />
+    <Counter />
   </React.StrictMode>
 );
 
