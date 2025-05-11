@@ -5,6 +5,7 @@ function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [contact, setContact] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleLogin = (e) => {
@@ -21,11 +22,13 @@ function App() {
     <div className="container">
       <h2>Login</h2>
       <p>---- test3 heading ----</p>
+      <p>---- test2 heading ----</p>
       <form onSubmit={handleLogin}>
         <div>
           <label>Username:</label>
           <br />
           <p> test3 - username field</p>
+          <p> test2 - username field</p>
           <input
             type="text"
             value={username}
@@ -47,6 +50,7 @@ function App() {
         <br />
         <button type="submit">Login</button>
         <p>test3: Please enter valid credentials</p>
+        <p>test2: Please enter valid credentials</p>
       </form>
       {message && <p>{message}</p>}
     </div>
